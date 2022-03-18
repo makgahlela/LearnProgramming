@@ -24,6 +24,10 @@
             this.salary = salary;
         }
 
+        public Employee()
+        {
+        }
+
         public void GiveRaise(double percent)
         {
             double increament = (1.0 + percent / 100.0);
