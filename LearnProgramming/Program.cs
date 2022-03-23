@@ -1,6 +1,7 @@
 ﻿
 using Newtonsoft.Json;
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.IO;
 
@@ -34,10 +35,17 @@ namespace LearnProgramming
 
             resultjson = String.Empty;
             resultjson = File.ReadAllText(path);
-            var resultStudent = JsonConvert.DeserializeObject<Student>(resultjson);
-            Console.WriteLine("Student");
-            Console.WriteLine();
-            Console.WriteLine(resultStudent.ToString());
+            //var resultStudent = JsonConvert.DeserializeObject<Student>(resultjson);
+            //Console.WriteLine("Student");
+            //Console.WriteLine();
+            //Console.WriteLine(resultStudent.ToString());
+
+            var resultStudentDic = JsonConvert.DeserializeObject<IDictionary>(resultjson);
+
+            foreach (DictionaryEntry learner in resultStudentDic)
+            {
+                Console.WriteLine(learner.Key+": "+learner.Value);
+            }
             Console.ReadLine();
 
             //    Employee employee = new Employee("Git Testing", 2500);
