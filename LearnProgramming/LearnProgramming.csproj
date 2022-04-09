@@ -64,7 +64,7 @@
   <ItemGroup>
     <Compile Include="CompareObjects.cs" />
     <Compile Include="Concurrent.cs" />
-    <Compile Include="FileSystemDemo\Start.cs" />
+    <Compile Include="FileSystemDemo\WorkingWithSystemIO.cs" />
     <Compile Include="GenericDemo.cs" />
     <Compile Include="Pair.cs" />
     <Compile Include="Point.cs" />

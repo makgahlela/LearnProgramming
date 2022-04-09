@@ -6,13 +6,13 @@ namespace LearnProgramming
 
     internal class Program
     {
-        //static void Main(string[] args)
-        //{
-        //    //using var bc = new BlockingCollection<int>();
+        static void Main(string[] args)
+        {
+            //using var bc = new BlockingCollection<int>();
 
 
-        //    Console.ReadLine();
-        //}
+            Console.ReadLine();
+        }
 
     }//class
 

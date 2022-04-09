@@ -7,15 +7,15 @@ namespace LearnProgramming.FileSystemDemo
     {
         //static string rootPath = @"C:\Users\kgets\Desktop\Builds\FileSystem";
         //static string newPath = @"C:\Users\kgets\Desktop\Builds\FileSystem\SubFolder A\";
-        static void Main(string[] args)
-        {
-            string rootPath = @"C:\Users\kgets\Desktop\Builds\FileSystem";
-            string newPath = @"C:\Users\kgets\Desktop\Builds\FileSystem\SubFolder A\";
+        //static void Main(string[] args)
+        //{
+        //    string rootPath = @"C:\Users\kgets\Desktop\Builds\FileSystem";
+        //    string newPath = @"C:\Users\kgets\Desktop\Builds\FileSystem\SubFolder A\";
 
-            WorkingDirectory(rootPath);
+        //    WorkingDirectory(rootPath);
 
-            Console.ReadLine();
-        }
+        //    Console.ReadLine();
+        //}
 
         #region Move or CopyFiles 
         /// <summary>
