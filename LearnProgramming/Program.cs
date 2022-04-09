@@ -1,21 +1,21 @@
-﻿//using System;
-//using System.Collections.Concurrent;
+﻿using System;
+using System.Collections.Concurrent;
 
-//namespace LearnProgramming
-//{
+namespace LearnProgramming
+{
 
-//    internal class Program
-//    {
-//        static void Main(string[] args)
-//        {
-//            //using var bc = new BlockingCollection<int>();
+    internal class Program
+    {
+        //static void Main(string[] args)
+        //{
+        //    //using var bc = new BlockingCollection<int>();
 
 
-//            Console.ReadLine();
-//        }
+        //    Console.ReadLine();
+        //}
 
-//    }//class
+    }//class
 
-//}
+}
 
 
