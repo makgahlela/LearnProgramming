@@ -9,10 +9,10 @@ namespace LearnProgramming.FileSystemDemo
         //static string newPath = @"C:\Users\kgets\Desktop\Builds\FileSystem\SubFolder A\";
         //static void Main(string[] args)
         //{
-        //    string rootPath = @"C:\Users\kgets\Desktop\Builds\FileSystem";
-        //    string newPath = @"C:\Users\kgets\Desktop\Builds\FileSystem\SubFolder A\";
+        //    string rootPath = @"C:\Temp\Dir";
 
-        //    WorkingDirectory(rootPath);
+        //    WorkingWithFiles(rootPath);
+
 
         //    Console.ReadLine();
         //}
@@ -77,22 +77,26 @@ namespace LearnProgramming.FileSystemDemo
             //file Scearch options A,B,C
 
             ////search pattern is folder Name "*studentData*.*" 
-            var files = Directory.GetFiles(rootPath, "*studentData*.*", SearchOption.AllDirectories);
+            var files = Directory.GetFiles(rootPath, "*Gra*.*", SearchOption.TopDirectoryOnly);
 
             ////search by file extention  "*.txt*
             //var files = Directory.GetFiles(rootPath, "*.txt", SearchOption.AllDirectories);
 
             foreach (var file in files)
             {
-                Console.WriteLine(file);
+                Green();
+                Console.WriteLine("Full PAth is: "+file);
                 //Console.WriteLine(Path.GetFileName(file));
                 //Console.WriteLine(Path.GetDirectoryName(file));
                 var info = new FileInfo(file);
-                //White();
-                //Console.Write($"{Path.GetFileName(file)}: ");
-                //Green();
-
-                //Console.Write($"{info.Length / 1024 / 1024} .MB/ .kbytes\n");
+                White();
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.Write($"{Path.GetFileNameWithoutExtension(file)}: ");
+                Green();
+                White();
+                Console.ForegroundColor = ConsoleColor.Magenta;
+                Console.Write($"{info.Length}bytes\n");
+               // Console.Write($"{info.Length / 1024 / 1024} .MB/ .kbytes\n");
             }
         }
         #endregion
